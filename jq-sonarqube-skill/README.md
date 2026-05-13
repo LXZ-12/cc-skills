@@ -9,6 +9,7 @@ SonarQube 查询参考手册。当用户提到 SonarQube、代码扫描、代码
 ## 配置
 
 配置文件搜索路径（优先级）：`./jq-config.json` → `<skill>/jq-config.json` → `../jq-config.json`
+base_url 无需改动
 
 ```json
 {
@@ -32,17 +33,6 @@ SonarQube 查询参考手册。当用户提到 SonarQube、代码扫描、代码
 
 ## 快速使用
 
-```bash
-# 统计摘要
-python -m scripts.queries stats <sonarkey>
-
-# 问题详情
-python -m scripts.queries issues <sonarkey> --severity MAJOR
-
-# 规则详情
-python -m scripts.queries rule java:S3776
-
-# 缓存控制
-python -m scripts.queries clear <sonarkey>    # 清除缓存
-python -m scripts.queries cleanup             # 清理过期缓存
-```
+- 查询 *** 模块的 Sonar 问题
+- 分析 *** 规则的问题
+- 处理 *** 规则问题
