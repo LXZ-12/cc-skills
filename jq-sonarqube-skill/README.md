@@ -8,8 +8,8 @@ SonarQube 查询参考手册。当用户提到 SonarQube、代码扫描、代码
 
 ## 配置
 
-配置文件搜索路径（优先级）：`./jq-config.json` → `<skill>/jq-config.json` → `../jq-config.json`
-base_url 无需改动
+- 配置文件搜索路径（优先级）：`./jq-config.json` → `<skill>/jq-config.json` → `../jq-config.json`
+- base_url 无需改动
 
 ```json
 {
